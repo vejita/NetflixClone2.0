@@ -1,0 +1,70 @@
+.row {
+  color: rgba(233, 233, 233, 0.897);
+  margin-left: 20px;
+}
+
+.row__movieName {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+.row__poster {
+  cursor: pointer;
+  max-height: 200px;
+  object-fit: contain;
+  margin-right: 20px;
+  min-width: 260px;
+  height: 140px;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.15);
+  opacity: 1;
+}
+
+.row__posterLarge {
+  min-width: 250px;
+  /* height: 120px; */
+  min-height: 400px;
+}
+.row__posterLarge:hover {
+  transform: scale(1.2);
+}
+
+.row__content {
+  display: none;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.541);
+}
+.row_content-box {
+  padding-top: 19px;
+}
+.content__title {
+  margin-bottom: 10px;
+  margin-left: 30px;
+  font-size: 1.3rem;
+}
+.content__description {
+  margin-left: 30px;
+  font-size: 0.8rem;
+  max-width: 200px;
+}
+
+.row_content-box-large {
+  padding-top: 250px;
+}
+.row__poster:hover .row__content {
+  display: block;
+}

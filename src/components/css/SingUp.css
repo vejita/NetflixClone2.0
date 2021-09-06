@@ -1,0 +1,69 @@
+.singupScreen {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.74);
+  padding: 70px;
+}
+.singupScreen > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.singupScreen > form > h1 {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.singupScreen > form > input {
+  outline: none;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+}
+
+.singupScreen > form > a > button {
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e50914e7;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.singupScreen > form > a > button:hover {
+  background-color: #e50914;
+}
+
+.singupScreen > form > h4 {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.grey {
+  color: gray;
+}
+
+.link {
+  text-transform: capitalize;
+}
+
+.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .singupScreen {
+    max-width: unset;
+    padding: 70px 50px;
+    margin: 30px;
+  }
+}

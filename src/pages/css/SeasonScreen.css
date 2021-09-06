@@ -1,0 +1,143 @@
+.SeasonScreen__bannerVideo {
+  height: 80vh;
+  padding-top: 4rem;
+  background-color: black;
+  position: relative;
+}
+.SeasonScreen__bannerFade {
+  height: 20.1rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(31, 31, 31, 0.61),
+    #111
+  );
+  z-index: 2000000000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.SeasonScreen__had {
+  font-size: 1.9rem;
+  margin-left: 20px;
+  color: rgb(202, 202, 202);
+  margin: 10px 0 10px 20px;
+}
+
+.SeasonScreen__RowGeners {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.SeasonScreen__RowGeners::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.SeasonScreen__RowImg {
+  min-height: 200px;
+  min-width: 135px;
+  max-width: 135px;
+  margin: 0 4px 0 4px;
+  cursor: pointer;
+}
+.SeasonScreen__container {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 8px;
+  margin-bottom: 20px;
+  height: 100%;
+}
+.SeasonScreen__CastName {
+  margin-bottom: 6px;
+}
+.SeasonScreen__CastOriginalName {
+  margin-bottom: 25px;
+  color: rgba(226, 226, 226, 0.692);
+}
+.SeasonScreen__RowImg:hover .SeasonScreen__container {
+  background-color: rgba(0, 0, 0, 0.61);
+  display: flex;
+}
+
+h3 {
+  height: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.925);
+}
+.SeasonScreen__episodes {
+  /* margin-top: 20px; */
+  padding-top: 30px;
+}
+.SeasonScreen__episode {
+  cursor: pointer;
+  background-color: rgba(37, 37, 37, 0.719);
+  /* background-color: rgba(0, 255, 76, 0.719); */
+  margin: 20px 30px 20px 30px;
+  display: flex;
+  color: rgb(219, 219, 219);
+  align-items: center;
+}
+
+.SeasonScreen__episodeImage {
+  width: 250px;
+  object-fit: contain;
+  margin: 7px 15px 7px 7px;
+}
+
+.SeasonScreen__episodeContentHeading {
+  margin-bottom: 23px;
+}
+
+.SeasonScreen__episodeContentDescription {
+  margin-bottom: 10px;
+  color: rgba(207, 207, 207, 0.747);
+}
+
+@media screen and (max-width: 600px) {
+  .SeasonScreen__bannerVideo {
+    height: 13rem;
+  }
+  .SeasonScreen__episodeContentHeading {
+    margin-bottom: 7px;
+  }
+
+  .SeasonScreen__episodeContentDescription {
+    margin-bottom: 5px;
+    color: rgba(207, 207, 207, 0.747);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .SeasonScreen__episode {
+    display: block;
+  }
+  .SeasonScreen__episodeContentHeading {
+    text-align: center;
+    font-size: 1.3rem;
+    width: 83%;
+    margin: 0 2px 9px 20px;
+    /* margin-bottom: 9px; */
+  }
+  .SeasonScreen__episodeImage {
+    margin-left: 25px;
+    margin-top: 15px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  }
+  .SeasonScreen__episodeImage {
+    width: 250px;
+  }
+  .SeasonScreen__episodeContentDescription {
+    margin-left: 13px;
+    padding-bottom: 15px;
+    font-size: 0.8rem;
+    margin-bottom: 7px;
+    color: rgba(207, 207, 207, 0.747);
+  }
+  .SeasonScreen__had {
+    font-size: 1.7rem;
+  }
+}

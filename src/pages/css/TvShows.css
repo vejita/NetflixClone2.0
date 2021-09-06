@@ -1,0 +1,120 @@
+.tvShows {
+  height: 100%;
+  width: 100%;
+}
+.tvShows__content > h1 {
+  color: rgba(228, 228, 228, 0.911);
+  margin-left: 50px;
+  font-size: 4rem;
+  padding-top: 100px;
+}
+.tvShows__img {
+}
+
+.tvShows__section {
+  width: 100%;
+  color: rgba(231, 231, 231, 0.808);
+}
+.tvShows__section > h1 {
+  font-size: 3rem;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.tvShows__poster {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: auto;
+  padding-right: auto;
+  justify-content: center;
+}
+.tvShows__img {
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  width: 250px;
+  height: 400px;
+  object-fit: contain;
+  transition: transform 800ms;
+}
+.tvShows__img:hover {
+  transform: scale(1.2);
+}
+
+.tvShows__content__img {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.tvShows__content__img:hover {
+  background: rgba(0, 0, 0, 0.562);
+}
+.tvShows__content__img:hover .tvShow__img__title,
+.tvShows__content__img:hover .tvShow__img__p {
+  display: block;
+}
+
+.tvShows__content__img > h1 {
+  font-size: 2.3rem;
+  display: none;
+  margin-left: 20px;
+}
+.tvShows__content__img > p {
+  margin-left: 20px;
+
+  display: none;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .tvShows__content > h1 {
+    text-align: center;
+  }
+  .tvShows__poster {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .tvShows__img {
+    height: 280px;
+    width: 180px;
+  }
+  .tvShows__content__img > h1 {
+    text-align: center;
+    margin: 8px;
+    font-size: 1.2rem;
+  }
+  .tvShows__content__img > p {
+    text-align: center;
+    font-size: 1rem;
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tvShows__content > h1 {
+    text-align: start;
+    margin-left: 10px;
+    font-size: 2.3rem;
+  }
+  .tvShows__section > h1 {
+    font-size: 1.8rem;
+  }
+  .tvShows__content__img > h1 {
+    margin: 4px;
+    font-size: 0.9rem;
+  }
+  .tvShows__content__img > p {
+    font-size: 0.7rem;
+    margin: 4px;
+  }
+  .tvShows__img {
+    height: 240px;
+    width: 140px;
+  }
+}

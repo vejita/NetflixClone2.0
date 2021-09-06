@@ -1,0 +1,32 @@
+.demo {
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.demo > h1 {
+  /* transform: translateY(50px); */
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+}
+.demo__homeLink {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: rgba(24, 14, 14, 0.76);
+}
+
+.demo__homeLink > a:hover {
+  text-decoration: red underline;
+}
+
+.demo__homeLink > a > span {
+  color: rgba(255, 113, 113, 0.692);
+}
+
+.demo__homeLink:hover .demo__homeLink > a > span {
+  color: rgb(255, 113, 113);
+}

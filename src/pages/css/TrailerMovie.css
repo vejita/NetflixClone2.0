@@ -1,0 +1,249 @@
+.TrailerMovie {
+  width: 100%;
+  height: 100%;
+}
+
+.TrailerMovie__nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+}
+.TrailerMovie__nav__logo {
+  margin-left: 25px;
+  position: fixed;
+  align-items: center;
+  left: 0;
+}
+
+.TrailerMovie__bi-arrow-left {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  fill: white;
+}
+
+.TrailerMovie__nav__search {
+  margin-right: 40px;
+  margin-top: 5px;
+  position: fixed;
+  right: 0;
+}
+
+.TrailerMovie__nav__search > svg {
+  height: 30px;
+  width: 30px;
+  fill: white;
+}
+
+.TrailerMovie__banner {
+  width: 100%;
+  position: relative;
+  top: 0;
+  height: 600px;
+  object-fit: contain;
+}
+.TrailerMovie__banner__fadeBottom {
+  height: 37.8rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(31, 31, 31, 0.61),
+    #111
+  );
+}
+
+.TrailerMovie__titleBox {
+  width: 100%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TrailerMovie__titleBox__left {
+  padding-left: 13%;
+  color: white;
+}
+
+.TrailerMovie__titleBox__left > h1 {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.TrailerMovie__titleBox__left > h2 {
+  font-weight: 350;
+  margin-top: 5px;
+  color: rgb(173, 173, 173);
+  margin-bottom: 5px;
+}
+.TrailerMovie__titleBox__left > h3 {
+  padding-left: 4px;
+  margin-bottom: 17px;
+}
+.TrailerMovie__titleBox__left > h3 > span {
+  font-weight: 500;
+  margin-right: 15px;
+  color: grey;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.TrailerMovie__tags {
+  padding: 9px 15px;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 25px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.TrailerMovie__titleBox__right {
+  padding-right: 13%;
+}
+.TrailerMovie__titleBox__right > button {
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  text-transform: uppercase;
+  background-color: rgba(180, 180, 180, 0.8);
+  border-radius: 5px;
+}
+
+.TrailerMovie__titleBox__right > button:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.TrailerMovie__summary {
+  background-color: rgba(37, 37, 37, 0.719);
+  color: white;
+  padding: 30px 65px;
+  text-align: left;
+  font-family: serif;
+}
+
+.TrailerMovie__seasons {
+  margin: 20px 10%;
+}
+
+.TrailerMovie__seasons > h2 {
+  margin: 20px 0px;
+  color: white;
+  text-transform: capitalize;
+}
+
+.TrailerMovie__movieBox {
+  /* background: gray; */
+  background-color: rgba(37, 37, 37, 0.719);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.TrailerMovie__body {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  justify-content: left;
+}
+
+.TrailerMovie__img {
+  margin-right: 20px;
+}
+.TrailerMovie__img > img {
+  height: 150px;
+  object-fit: contain;
+}
+.TrailerMovie__content {
+  padding-top: 10px;
+  color: white;
+}
+.TrailerMovie__content > h2 {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .TrailerMovie__movieBox {
+    max-width: 70%;
+    margin: auto;
+  }
+  .TrailerMovie__content > h2 {
+    text-align: center;
+  }
+  .TrailerMovie__body {
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    /* max-width: 300px; */
+  }
+  .TrailerMovie__img > img {
+    display: block;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .TrailerMovie__titleBox__left {
+    padding-left: 25px;
+  }
+  .TrailerMovie__titleBox__right {
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .TrailerMovie__movieBox {
+    max-width: 300px;
+    margin: auto;
+  }
+  .TrailerMovie__banner {
+    height: 500px;
+  }
+  .TrailerMovie__banner__fadeBottom {
+    height: 32rem;
+  }
+  .TrailerMovie__titleBox {
+    display: block;
+  }
+  .TrailerMovie__titleBox__left {
+    padding-left: 10px;
+  }
+  .TrailerMovie__titleBox__right {
+    position: relative;
+    padding-right: 10px;
+    right: 0;
+  }
+  .TrailerMovie__titleBox__right > button {
+    padding: 0.7rem 1.1rem;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+  .TrailerMovie__titleBox__left > h1 {
+    font-size: 1.8rem;
+  }
+  .TrailerMovie__titleBox__left > h2 {
+    font-size: 1.2rem;
+  }
+  .TrailerMovie__titleBox__left > h3 {
+    padding-left: 0px;
+  }
+  .TrailerMovie__titleBox__left > h3 > span {
+    font-size: 0.9rem;
+  }
+  .TrailerMovie__tags {
+    font-size: 0.6rem;
+  }
+  .TrailerMovie__summary {
+    padding: 25px 30px;
+  }
+  .TrailerMovie__summary > p {
+    font-size: 0.9rem;
+  }
+
+  .TrailerMovie {
+    padding-bottom: 10px;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}

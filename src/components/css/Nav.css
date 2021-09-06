@@ -1,0 +1,167 @@
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  padding-left: 0;
+  height: 30px;
+  width: 100%;
+  z-index: 1;
+  transition: all 0.5s ease-in;
+}
+
+.nav__container {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.nav__logo {
+  position: fixed;
+  left: 0;
+  top: 8.5px;
+  width: 90px;
+  object-fit: contain;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.nav__avatar {
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  width: 40px;
+  top: 13.5px;
+}
+
+.nav__black {
+  background-image: linear-gradient(
+    180deg,
+    rgba(37, 37, 37, 0.808),
+    rgba(0, 0, 0, 0.829)
+  );
+}
+
+.qnave__fade {
+  /* left: 0; */
+  /* position: fixed; */
+  height: 3rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(66, 66, 66, 0.61),
+    rgba(31, 30, 30, 0.61) 90%
+  );
+  z-index: 2;
+}
+
+.nav__components {
+  padding-top: 5px;
+  display: flex;
+  position: relative;
+  left: 100px;
+  list-style: none;
+  justify-content: center;
+}
+.nav__components > a {
+  margin-right: 35px;
+}
+.nav__components > a > li {
+  box-sizing: content-box;
+  text-transform: capitalize;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.nav__components > a > li:hover {
+  border-bottom: 2px solid red;
+}
+.active {
+  border-bottom: 2px solid red;
+}
+.downArrow {
+  display: none;
+}
+.in_li__downArrow {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .nav__components {
+    position: fixed;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    top: -390px;
+    /* top: 0px; */
+    flex-direction: column;
+    z-index: 40;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 19px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(37, 37, 37, 0.808),
+      rgba(0, 0, 0, 0.829) 95%
+    );
+    transition: top 600ms;
+  }
+  .cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100vw;
+    background-color: rgba(27, 27, 27, 0.562);
+    z-index: 30;
+  }
+  .set_cover {
+    height: 100vh;
+  }
+  .dotoggle {
+    top: 0 !important;
+  }
+  .in_li__downArrow {
+    display: block;
+    position: fixed;
+    left: 47.5%;
+    transform: scale(1.5) rotate(180deg);
+    fill: white;
+  }
+  .nav__components__downArrow {
+    margin-top: 40px;
+  }
+  .nav__components > a {
+    padding-bottom: 20px;
+  }
+  .nav__components > a:hover .nav__components > a > li {
+    border-bottom: 2px solid red;
+  }
+  .nav__components > a {
+    width: 200px;
+    text-align: center;
+  }
+
+  .nav__components > a:hover .nav__components > a > li {
+    border: none;
+  }
+  .nav__avatar {
+    cursor: pointer;
+    position: fixed;
+    right: 0px;
+    margin-right: 20px;
+    width: 40px;
+  }
+  .nav {
+    width: 100%;
+    overflow-y: hidden;
+  }
+  .downArrow {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 40px;
+    transform: scale(1.5);
+    fill: rgba(148, 148, 148, 0.75);
+  }
+  .hide_downArrow {
+    display: none;
+  }
+}

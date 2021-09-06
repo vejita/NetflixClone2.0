@@ -1,0 +1,145 @@
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg") center
+    no-repeat;
+  background-size: cover;
+}
+.loginScreen__gradient {
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.loginScreen__logo {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+}
+.loginScreen__btn {
+  cursor: pointer;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e50914e7;
+  border-radius: 5px;
+  border: none;
+  z-index: 2;
+}
+
+.loginScreen__btn:hover {
+  background-color: #e50914;
+}
+
+.loginScreen__body {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.loginScreen__body > h1 {
+  margin-bottom: 30px;
+}
+.loginScreen__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.loginScreen__getStarted {
+  text-transform: uppercase;
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914e7;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.loginScreen__getStarted:hover {
+  background-color: #e50914;
+}
+
+@media screen and (max-width: 900px) {
+  .loginScreen__body > h1 {
+    font-size: 2.1rem;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .loginScreen__body > h2 {
+    font-size: 1.85rem;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .loginScreen__body > h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .loginScreen__body {
+    top: 20%;
+  }
+  .loginScreen__body > h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .loginScreen__body > h2 {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .loginScreen__body > h3 {
+    font-size: 1rem;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .loginScreen__getStarted {
+    padding: 17.3px 10px;
+    font-size: 0.85rem;
+  }
+  .loginScreen__input > form > input {
+    width: 55%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .loginScreen__gradient {
+    height: 200vh;
+  }
+}

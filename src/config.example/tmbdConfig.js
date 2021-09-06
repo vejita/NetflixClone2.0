@@ -1,0 +1,6 @@
+// STEP 2  ::  REMOVE THE DUMMY KEY FROM YOUR TMBD API KEY
+// STEP 2  ::  RENAME THIS FILE ANS config
+
+const ApiKey = "XXXXXXXXXXXXXXXXXXXXXXXX";
+
+export default ApiKey;

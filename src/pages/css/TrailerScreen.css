@@ -1,0 +1,190 @@
+.trailerScreen {
+  width: 100%;
+  height: 100%;
+}
+
+.trailerScreen__nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 1;
+}
+.trailerScreen__nav__logo {
+  margin-left: 25px;
+  position: fixed;
+  align-items: center;
+  left: 0;
+}
+
+.bi-arrow-left {
+  height: 40px;
+  width: 40px;
+  fill: rgba(233, 233, 233, 0.589);
+}
+
+.trailerScreen__nav__search {
+  margin-right: 40px;
+  margin-top: 5px;
+  position: fixed;
+  right: 0;
+}
+
+.trailerScreen__nav__search > svg {
+  height: 30px;
+  width: 30px;
+  fill: rgb(216, 216, 216);
+}
+
+.trailerScreen__banner {
+  width: 100%;
+  position: relative;
+  top: 0;
+  height: 600px;
+  object-fit: contain;
+}
+.trailerScreen__banner__fadeBottom {
+  height: 37.8rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(31, 31, 31, 0.61),
+    #111
+  );
+}
+
+.trailerScreen__titleBox {
+  width: 100%;
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trailerScreen__titleBox__left {
+  padding-left: 13%;
+  color: rgb(255, 255, 255);
+}
+
+.trailerScreen__titleBox__left > h1 {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.trailerScreen__titleBox__left > h2 {
+  font-weight: 350;
+  margin-top: 5px;
+  color: rgb(173, 173, 173);
+  margin-bottom: 5px;
+}
+.trailerScreen__titleBox__left > h3 {
+  padding-left: 4px;
+  margin-bottom: 17px;
+}
+.trailerScreen__titleBox__left > h3 > span {
+  font-weight: 500;
+  margin-right: 15px;
+  color: grey;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.trailerScreen__tags {
+  padding: 9px 15px;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 25px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.trailerScreen__titleBox__right {
+  padding-right: 13%;
+}
+.trailerScreen__titleBox__right > button {
+  border: none;
+  cursor: pointer;
+  padding: 0.8rem 1.6rem;
+  text-transform: uppercase;
+  background-color: rgba(180, 180, 180, 0.8);
+  border-radius: 5px;
+}
+
+.trailerScreen__titleBox__right > button:hover {
+  background-color: rgb(180, 180, 180);
+}
+
+.trailerScreen__summary {
+  background-color: rgba(37, 37, 37, 0.719);
+  /* background-color: black; */
+  color: rgba(226, 226, 226, 0.966);
+  padding: 30px 65px;
+  text-align: left;
+  font-family: serif;
+}
+
+.trailerScreen__seasons {
+  margin: 20px 10%;
+}
+
+.trailerScreen__seasons > h2 {
+  margin: 20px 0px;
+  color: rgb(218, 218, 218);
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 800px) {
+  .trailerScreen__titleBox {
+    flex-direction: column;
+  }
+
+  .trailerScreen__titleBox__right > button {
+    margin-left: 26px;
+    margin-top: 40px;
+  }
+
+  .trailerScreen__titleBox__left {
+    padding-left: 25px;
+  }
+  .trailerScreen__titleBox__right {
+    padding-right: 25px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .trailerScreen__banner {
+    height: 500px;
+  }
+  .trailerScreen__banner__fadeBottom {
+    height: 31.7rem;
+  }
+  .trailerScreen__titleBox__left {
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  .trailerScreen__titleBox__right {
+    padding-right: 10px;
+  }
+  .trailerScreen__titleBox__right > button {
+    padding: 0.7rem 1.1rem;
+  }
+  .trailerScreen__titleBox__left > h1 {
+    font-size: 1.8rem;
+  }
+  .trailerScreen__titleBox__left > h2 {
+    font-size: 1.2rem;
+  }
+  .trailerScreen__titleBox__left > h3 {
+    padding-left: 0px;
+  }
+  .trailerScreen__titleBox__left > h3 > span {
+    font-size: 0.9rem;
+  }
+  .trailerScreen__tags {
+    font-size: 0.6rem;
+  }
+  .trailerScreen__summary {
+    padding: 25px 30px;
+  }
+  .trailerScreen__summary > p {
+    font-size: 0.9rem;
+  }
+}
