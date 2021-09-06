@@ -33,7 +33,7 @@ function Nav(props) {
     <div className={`nav ${show && "nav__black"}`}>
       {/* <div className="nav__coverForMobile" /> */}
       <div className="nav__container">
-        <Link to="/">
+        <Link to="/home">
           <img className="nav__logo" src="/images/logo.png" alt="" />
         </Link>
         <div
@@ -45,7 +45,7 @@ function Nav(props) {
           <ul
             className={toggle ? "nav__components dotoggle" : "nav__components"}
           >
-            <Link to="/">
+            <Link to="/home">
               <li>home</li>
             </Link>
 
